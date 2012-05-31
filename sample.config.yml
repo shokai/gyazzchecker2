@@ -1,0 +1,12 @@
+title : 'Gyazz Checker'
+
+mongo : 
+  host: localhost
+  port: 27017
+  database: gyazz-checker-web
+
+gyazz :
+  - name : '増井研'
+    user : 'pitecan'
+    pass : 'masu1lab'
+  - name : 'UIPedia'
