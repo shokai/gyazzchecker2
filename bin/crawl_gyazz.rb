@@ -40,6 +40,9 @@ Conf['gyazz'].each do |g|
           page.lines = lines
           page.last_modified_at = Time.now
           page.save
+          Diff.new(:gyazz_name => gyazz_name,
+                   :page_name => page_name,
+                   :lines => lines).save
         end
       end
     rescue StandardError, Timeout::Error => e
