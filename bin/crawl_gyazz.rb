@@ -1,9 +1,10 @@
 #!/usr/bin/env ruby
 require 'rubygems'
-require File.dirname(__FILE__)+'/../bootstrap'
-Bootstrap.init :inits, :models
+require 'bundler/setup'
 require 'gyazz'
 require 'args_parser'
+require File.dirname(__FILE__)+'/../bootstrap'
+Bootstrap.init :inits, :models
 
 parser = ArgsParser.parse ARGV do
   arg :interval, 'loop interval (sec)', :default => 3
